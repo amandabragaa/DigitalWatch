@@ -1,22 +1,22 @@
  const horas = document.getElementById('horas');
- const minutos = document.getElementById('minutoutos');
+ const minutos = document.getElementById('minutos');
  const segundos = document.getElementById('segundos');
 
  const relogio = setInterval(function time() {
     let dateToday = new Date();
     let hora = dateToday.getHours();
-    let minutos = dateToday.getminutoutes();
-    let segundos = dateToday.getSeconds();
+    let minuto = dateToday.getMinutes();
+    let segundo = dateToday.getSeconds();
 
     if (hora < 10) hora = '0' + hora;
 
-    if (minutos < 10) minutos = '0' + minutos;
+    if (minuto < 10) minuto = '0' + minuto;
     
-    if (segundos < 10) s = '0' + segundos;
+    if (segundo < 10) segundo = '0' + segundo;
 
     horas.textContent = hora;
-    minutoutos.textContent = minutos;
-    segundos.textContent = segundos;
+    minutos.textContent = minuto;
+    segundos.textContent = segundo;
  })
   
  
